@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signin.css">
+    <title>Westside</title>
+</head>
+<body>
+    <div id="main">
+        <h2>MY ACCOUNT</h2>
+        <p id="para">To make shopping hassle-free for you, you can log in with just your phone number and an OTP from now on! If accessing with your mail ID, please use the ID connected with your existing account. Happy shopping!</p>
+        <span>
+             <input type="number" id="mobile" placeholder="MOBILE(OTP will be send for verification)"/>
+        <button onclick="toEmail()" id="bkcolor" class="bgcolor">USE EMAIL</button>
+        </span><br><br>
+        <button onclick="sendOtp()" class="bgcolor" id="verify">SEND OTP</button>
+        <div id="container">
+            <input id="input-otp" placeholder="Enter OTP"/><br>
+               <span>
+                  <button class="bgcolor" onclick="verification()">Verify OTP</button>
+                  <button class="bgcolor" onclick="resendOtp()">Resend OTP</button>
+               </span>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="signin.js">
+
+</script>

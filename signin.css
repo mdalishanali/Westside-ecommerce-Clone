@@ -1,0 +1,33 @@
+#main{
+    width:400px;
+    margin-left:300px;
+    margin-top:100px;
+  
+}
+.bgcolor{
+    background-color: black;
+    color:white;
+    padding:5px 15px;
+}
+#mobile{
+    border:none;
+    border-bottom: 1px solid rgb(98, 95, 95);
+    width:300px;
+    padding:7px;
+}
+#bkcolor{
+    position: absolute;
+}
+#para{
+    color:rgb(102, 101, 101);
+}
+#container{
+    display: none;
+}
+#input-otp{
+    border:none;
+    border-bottom: 1px solid rgb(98, 95, 95);
+    width:300px;
+    padding:7px;
+    margin-bottom:20px;
+}
