@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- cart page start -->
+    <p>Home<span>></span><span>Shopping Cart</span></p>
+    <h1>My Cart</h1>
+
+    <div class="cart-cont">
+      <!-- cart cont has two one is product and order-summary -->
+
+      <div class="product">
+        <div class="prod-text headtxt">
+          <p>Products</p>
+        </div>
+
+        <div class="cart-item"></div>
+      </div>
+
+      <div class="order-summary">
+        <div class="order-text">
+          <p>ORDER SUMMARY</p>
+        </div>
+
+        <div class="total">
+          <p>Total</p>
+          <h2 id="totalPrice">₹</h2>
+        </div>
+        <hr />
+        <div class="check-cont">
+          <button id="checkout">Proceed To Checkout</button>
+        </div>
+      </div>
+    </div>
+    <!-- cart page end -->
+  </body>
+</html>
+
+<script>
+  let data = JSON.parse(localStorage.getItem("cart_section"));
+  console.log(data);
+  let cartItem = document.querySelector(".cart-item");
+  data.map(function (ele) {
+    let itemDiv = document.createElement("div");
+    itemDiv.setAttribute("class", "item-div");
+
+    //  item Image Div start
+    let itemImg = document.createElement("div");
+
+    itemImg.setAttribute("class", "item-img");
+
+    let imgt = document.createElement("img");
+    imgt.setAttribute("class", "item-thumb");
+
+    imgt.src = ele.img;
+    itemImg.append(imgt);
+    //  item Image Div end
+
+    let itemDetail = document.createElement("div");
+    itemDetail.setAttribute("class", "item-detail");
+
+    let title = document.createElement("p");
+    title.setAttribute("id", "title");
+    title.innerHTML = ele.name;
+
+    // price start
+    let price = document.createElement("p");
+    price.setAttribute("id", "price");
+    price.innerHTML = `₹ ${ele.price}`;
+    // price end
+
+    // wish start
+    let wish = document.createElement("div");
+    wish.setAttribute("class", "wish");
+
+    let wText = document.createElement("p");
+    wText.innerHTML = "Add to Wishlist";
+    let heartImg = document.createElement("img");
+    heartImg.src =
+      "https://img.icons8.com/material-outlined/24/000000/like--v1.png";
+
+    wish.append(wText, heartImg);
+    wish.addEventListener("click", addToWish);
+    // wish end
+    let qty = document.createElement("p");
+    qty.innerHTML = "Quantity";
+
+    let qty_Box = document.createElement("div");
+    qty_Box.setAttribute("class", "qty-box");
+
+    let neg = document.createElement("div");
+    neg.setAttribute("class", "neg");
+    neg.innerHTML = "-";
+    neg.addEventListener("click", neg);
+
+    let qtyValue = document.createElement("div");
+    qtyValue.setAttribute("class", "qtyValue");
+    qtyValue.innerHTML = 1;
+
+    let pos = document.createElement("div");
+    pos.setAttribute("class", "pos");
+    pos.innerHTML = "+";
+    pos.addEventListener("click", pos);
+
+    let remove = document.createElement("div");
+    remove.setAttribute("class", "removeCont");
+    let removeText = document.createElement("p");
+    removeText.innerHTML = "Remove ";
+
+    remove.append(removeText);
+    remove.addEventListener("click", removeItem);
+
+    qty_Box.append(neg, qtyValue, pos);
+
+    itemDetail.append(title, price, wish, qty, qty_Box, remove);
+
+    itemDiv.append(itemImg, itemDetail);
+
+    cartItem.append(itemDiv);
+
+    // total wala stuff
+    let totalPrice = document.getElementById("totalPrice");
+    totalPrice.textContent = ele.price;
+  });
+
+  function addToWish() {
+    console.log("Your item added to wish");
+  }
+  function pos() {
+    console.log("size increase");
+  }
+  function neg() {
+    console.log("size dec");
+  }
+  function removeItem() {
+    let data = localStorage.removeItem("mytime");
+  }
+
+  //addition of price
+  var pricearr = data.map(function (elem) {
+    return elem.price;
+  });
+  var sumTotal = pricearr.map(Number).reduce(function (a, b) {
+    return a + b;
+  });
+  let totalPrice = document.getElementById("totalPrice");
+  totalPrice.textContent = `₹ ${sumTotal.toFixed(2)}`;
+
+  // stuff
+
+  /*
+          <!-- item-div start -->
+          <div class="item-div">
+            <!--  item div has item img and details -->
+
+            <div class="item-img">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0266/6276/4597/products/100001_300848002_050_1_757ba797-ef71-40b3-a2f7-cd8ff67c1460_160x.jpg?v=1609173907"
+                id="item-img"
+                alt=""
+              />
+            </div>
+
+            <div class="item-detail">
+              <p id="title">WES Formals Blush Pink Knitted Slim Fit Sweater</p>
+              <p>WES Formals</p>
+              <p>Pink/s</p>
+              <p id="price">₹ 999.00</p>
+
+              <div class="wish">
+                <p>Add to Wishlist</p>
+                <img
+                  src="https://img.icons8.com/material-outlined/24/000000/like--v1.png"
+                />
+              </div>
+
+              <p>Quantity</p>
+
+              <div class="qty-box">
+
+                <div class="neg">-</div>
+                <div class="qty-value">1</div>
+                <div class="pos">+</div>
+              </div>
+            </div>
+          </div>
+          <!-- item-div end -->
+          */
+</script>
