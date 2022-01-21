@@ -1,0 +1,152 @@
+/* topNav */
+
+.topnav{
+    height: 8%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 1%;
+    position: fixed;
+    top: 0;
+}
+.logo{
+    margin-left: 1%;
+    height: 100%;
+    width: 13%;
+}
+.logo:hover,.search:hover,.fa-heart:hover,.fa-shopping-cart:hover,.corner>p:hover,.cartq:hover{
+    cursor: pointer;
+}
+.searchdiv{
+    border: solid 1px black;
+    margin: auto;
+    width:25%;
+    display: flex;
+}
+.searchbar{
+    height: 25px;
+    width: 85%;
+    margin-left: 2%;
+    border: transparent;
+}
+.fa-search{
+    font-size: large;
+}
+.search{
+    width: 13%;
+    background-color: white;
+    border: transparent;
+}
+.corner{
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 3%;
+}
+.corner>p{
+    font-size:13px;
+    font-weight: bold;
+}
+.fa-heart,.fa-shopping-cart{
+    font-size: 20px;
+    margin-top: 5%;
+}
+.cartq{
+    background-color: black;
+    height: 38%;
+    width:10%;
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    margin-left: -19%;
+}
+
+/* midpart */
+
+.mid{
+    display: flex;
+}
+.cont{
+    margin-left: 17%;
+    margin-top: 10%;
+}
+
+/* leftnav */
+.leftnav{
+    height:540px;
+    width:17%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 18%;
+}
+.leftnav::-webkit-scrollbar {
+    display: none;
+}
+.list{
+    margin-top: 15%;
+}
+.list>li{
+    margin-bottom: -5%;
+}
+.hr{
+    margin-left: 15%;
+    margin-top: 15%;
+}
+.list2>li{
+    margin-bottom: 10%;
+}
+li:hover{
+    cursor: pointer;
+}
+
+.saleList>li,.winterList>li,.onlineList>li,.womenList>li,.manList>li{
+    margin-bottom: 10%;
+    margin-left: -20%;
+}
+.brandsList>li,.collectList>li{
+    margin-bottom: 10%;
+    margin-left: -110%;
+}
+.ethinicList>li,.mbrandsList>li,.mcollectList>li{
+    margin-bottom: 10%;
+    margin-left: -50%;
+}
+.saleList,.winterList,.onlineList,.womenList,.manList,.ethinicList,.brandsList,.collectList,.mbrandsList,.mcollectList{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 40%;
+    margin-left: 20%;
+}
+.up{
+    display: flex;
+}
+.down{
+    display: flex;
+    margin-left: 3%;
+    justify-content: space-between;
+    margin-right: 10%;
+    border-top: solid 1px black;
+    padding-top: 1%;
+}
+.subs{
+    margin-left: 10%;
+}
+.subs>div>input{
+    border: transparent;
+}
+.subs>div>button{
+    border: transparent;
+    background-color: transparent;
+    margin-left: 8%;
+}
+.subs{
+    height: 100px;
+    border-bottom: solid 1px black;
+}
