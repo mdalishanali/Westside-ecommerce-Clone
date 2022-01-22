@@ -1,0 +1,132 @@
+.cart-cont {
+  display: flex;
+  /* border: 1px solid red; */
+  /* padding: 2px; */
+  width: 100%;
+}
+/* style for product-div */
+.cart-cont > .product {
+  width: 100%;
+  /* border: 2px solid yellow; */
+}
+.prod-text {
+  width: 98%;
+  background-color: #f3f3f3;
+  height: 40px;
+}
+.prod-text > p {
+  font-size: 16px;
+  padding: 9px;
+  margin-left: 20px;
+
+  text-transform: uppercase;
+}
+.item-div {
+  display: flex;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.item-img {
+  border: 0px solid blue;
+}
+/* .item-img > img {
+    height: 165px;
+    width: 125px;
+    margin-top: 40px;
+  } */
+/* img {
+    height: 25px;
+    width: 25px;
+  } */
+.item-thumb {
+  height: 165px;
+  width: 125px;
+  margin-top: 40px;
+}
+.item-detail {
+  margin-left: 25px;
+}
+.item-detail > #title {
+  line-height: 20px;
+}
+.wish {
+  display: flex;
+  width: 100%;
+}
+.wish > p {
+  /* border: 1px solid red; */
+  line-height: 20px;
+}
+.wish > img {
+  height: 20px;
+  width: 20px;
+  /* border: 1px solid red; */
+  line-height: 20px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.qty-box {
+  height: 20px;
+  display: flex;
+  width: 50%;
+}
+.qty-box > div {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+/* style for product-div */
+
+.cart-cont > .order-summary {
+  width: 40%;
+  /* border: 1px solid green; */
+}
+.order-text {
+  width: 100%;
+  background-color: #f3f3f3;
+  height: 40px;
+}
+.order-text > p {
+  padding: 5px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.check-cont {
+  margin-top: 25px;
+}
+#checkout {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  height: 50px;
+  height: 45px;
+  width: 300px;
+  /* justify-content: center;
+  align-items: center; */
+  /* margin: auto; */
+  /* margin-left: 55px; */
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#checkout:hover {
+  background-color: white;
+  color: black;
+}
+.removeCont {
+  cursor: pointer;
+  float: right;
+  margin-top: -45px;
+}
+.removeCont > p:hover {
+  width: fit-content;
+  border: 1px solid black;
+}
