@@ -234,6 +234,10 @@ function display(arr) {
   var span = document.createElement("span");
   span.innerText = `₹ ${arr.price}`;
 
+  document.querySelector("#heart_symbole").addEventListener("click",()=>{
+    wishList(arr);
+  });
+
   document.querySelector("#buy_product_images").append(div2);
   document.querySelector("#buy_product_img_scroll").append(div1);
   document.querySelector(".buy_product_ptag").append(div3);
@@ -256,7 +260,7 @@ function display(arr) {
     alert("Your item is added to cart");
     //addTocart(cartItem);
     console.log(cartItem);
-    // window.location.href = "../cart.html";
+    window.location.href = "./cart.html";
   });
 }
 
@@ -281,7 +285,16 @@ function checkPincode() {
     alert("please enter correct pincode");
   }
 }
-</script>
+
+
+
+let wishList = (arr) => {
+    let wisharr= JSON.parse(localStorage.getItem("wishList")) || [];
+    wisharr.push(arr);
+    localStorage.setItem("wishList",JSON.stringify(wisharr));
+    window.location.href="./wishlist.html";
+}
+// </script>
 
 <script type="module">
     import {topNav,leftNav,navButtons,footer} from "./components/navBar.js";

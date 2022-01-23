@@ -1,6 +1,7 @@
 /* topNav */
 
 .topnav {
+  background-color: white;
   height: 8%;
   width: 100%;
   margin: auto;
@@ -66,6 +67,19 @@
   border-radius: 100%;
   margin-left: -19%;
 }
+.signdiv{
+  margin-left: -15%;
+  cursor: pointer;
+}
+.login{
+  font-size: smaller  ;
+  padding-left: 10%;
+  border: solid 1px black;
+  width: 120%;
+  border-radius: 10%;
+  background-color: white;
+  display: none;
+}
 
 /* midpart */
 
@@ -79,6 +93,7 @@
 
 /* leftnav */
 .leftnav {
+  background-color: white;
   height: 540px;
   width: 17%;
   overflow-y: scroll;
@@ -143,8 +158,8 @@ li:hover {
 /* footer */
 
 .footer {
-  margin-top: 40%;
-  margin-left: 20%;
+  margin-left: 15%;
+  margin-top: 10%;
 }
 .up {
   display: flex;

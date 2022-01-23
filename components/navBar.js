@@ -7,7 +7,13 @@ let topNav = () => {
     <button class="search"><i class="fas fa-search"></i></button>
 </div>
 <div class="corner">
-    <p class="signin">Sign In</p>
+    <div class="signdiv">
+        <p class="signin"></p>
+        <div class="login">
+            <p>My Account</p>
+            <p class="logout">Log out</p>
+        </div>
+    </div>
     <i class="far fa-heart"></i>
     <i class="fas fa-shopping-cart"></i>
     <div class="cartq">0</div>
@@ -31,7 +37,7 @@ let leftNav = () => {
         <ul class="winterList" type="none">
             <li>WOMAN</li>
             <li>MAN</li>
-            <li>KIDS</li>
+            <li class="kidsW">KIDS</li>
         </ul>
     <li class="online"><h2>ONLINE ONLY</h2></li>
         <ul class="onlineList" type="none">
@@ -47,7 +53,7 @@ let leftNav = () => {
                 <ul type="none" class="ethinicList">
                     <li class="brands">BRANDS</li>
                         <ul type="none" class="brandsList">
-                            <li>BOMBAY PAISLEY</li>
+                        <li class="womansW">BOMBAY PAISLEY</li>
                             <li>UTSA</li>
                             <li>VARK</li>
                             <li>ZUBA</li>
@@ -70,7 +76,7 @@ let leftNav = () => {
         <ul class="manList" type="none">
         <li class="mbrands">BRANDS</li>
         <ul type="none" class="mbrandsList">
-            <li>ASCOT</li>
+            <li class="mansW">ASCOT</li>
             <li>ETA</li>
             <li>KALA BY ETA</li>
             <li>NUON</li>
@@ -185,6 +191,51 @@ let navButtons = () => {
     })
     document.querySelector(".mcollect").addEventListener("click",()=>{
         document.querySelector(".mcollectList").classList.toggle("show");
+    })
+    document.querySelector(".womansW").addEventListener("click",()=>{
+        window.location.href="./womansWestside.html";
+    })
+    document.querySelector(".mansW").addEventListener("click",()=>{
+        window.location.href="./mensWestside.html";
+    })
+    document.querySelector(".kidsW").addEventListener("click",()=>{
+        window.location.href="./kidsWestside.html";
+    })
+    document.querySelector(".fa-shopping-cart").addEventListener("click",()=>{
+        window.location.href="./cart.html"; 
+    })
+
+    let data = JSON.parse(localStorage.getItem("cart_section")) || null;
+    if(data == null){
+        document.querySelector(".cartq").textContent="0";
+    }
+    else{
+        document.querySelector(".cartq").textContent=data.length;
+    }
+    
+    
+    let login_detail = JSON.parse(localStorage.getItem("Account_detail")) || null;
+
+    if(login_detail==null){
+        document.querySelector(".signin").textContent="Sign In";
+        document.querySelector(".signin").addEventListener("click",()=>{
+            window.location.href="./signin.html";
+        })
+    }
+    else{
+        document.querySelector(".signin").textContent=`Hi ${login_detail.first} ${login_detail.last}`;
+        document.querySelector(".signdiv").addEventListener("click",()=>{
+            document.querySelector(".login").classList.toggle("show");
+        })
+    }
+
+    document.querySelector(".logout").addEventListener("click",()=>{
+        localStorage.removeItem("Account_detail");
+        window.location.href="./index.html";
+    })
+
+    document.querySelector(".fa-heart").addEventListener("click",()=>{
+        window.location.href="./wishlist.html";
     })
 }
 
