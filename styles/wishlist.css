@@ -1,0 +1,26 @@
+#container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    font-size: 14px;
+    padding-left:40px;
+    margin-top: 55px;
+    line-height: 5px;
+  
+}
+#image{
+
+    width:470px;
+    height: 650px;
+}
+/* #main{
+    margin-left: 270px;
+    margin-top: 140px;
+} */
+#priceid{
+    font-size:8px;
+}
+#btnid{
+    border: none;
+    background-color: transparent;
+}

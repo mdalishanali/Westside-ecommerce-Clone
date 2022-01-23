@@ -292,7 +292,6 @@ let wishList = (arr) => {
     let wisharr= JSON.parse(localStorage.getItem("wishList")) || [];
     wisharr.push(arr);
     localStorage.setItem("wishList",JSON.stringify(wisharr));
-    window.location.href="./wishlist.html";
 }
 // </script>
 

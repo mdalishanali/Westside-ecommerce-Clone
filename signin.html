@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="./styles/navBar.css">
+    <title>Westside</title>
+</head>
+<body>
+
+    <div class="topnav"></div>
+    <div class="mid">
+        <div class="leftnav"></div>
+        <div class="cont">
+            
+    <div id="main">
+        <h2>MY ACCOUNT</h2>
+        <p id="para">To make shopping hassle-free for you, you can log in with just your phone number and an OTP from now on! If accessing with your mail ID, please use the ID connected with your existing account. Happy shopping!</p>
+        <span>
+             <input type="number" id="mobile" placeholder="MOBILE(OTP will be send for verification)"/>
+        <button onclick="toEmail()" id="bkcolor" class="bgcolor">USE EMAIL</button>
+        </span><br><br>
+        <button onclick="sendOtp()" class="bgcolor" id="verify">SEND OTP</button>
+        <div id="container">
+            <input id="input-otp" placeholder="Enter OTP"/><br>
+               <span>
+                  <button class="bgcolor" onclick="verification()">Verify OTP</button>
+                  <button class="bgcolor" onclick="resendOtp()">Resend OTP</button>
+               </span>
+        </div>
+        <div id="customer">
+            <input type="text" id="first-name" placeholder="FIRST NAME*"><br>
+            <input type="text" id="last-name" placeholder="LAST NAME*"><br>
+            <input type="number" id="mob" placeholder="MOBILE*"><br>
+            <input type="email" id="email-id" placeholder="EMAIL(username)*"><br>
+            <button id="create" onclick="toHome()">CREATE CUSTOMER</button>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+<script src="./scripts/signin.js">
+
+</script>
+
+
+
+<script type="module">
+    import {topNav,leftNav,navButtons,footer} from "./components/navBar.js";
+    document.querySelector(".topnav").innerHTML=topNav();
+    document.querySelector(".leftnav").innerHTML=leftNav();
+    document.querySelector(".footer").innerHTML=footer();
+    navButtons();
+</script>

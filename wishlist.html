@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="./styles/navBar.css">
+    <link rel="stylesheet" href="./styles/wishlist.css">
+</head>
+<body>
+    <div class="topnav"></div>
+    <div class="mid">
+        <div class="leftnav"></div>
+        <div class="cont">
+            <div id="main">
+                <h2>MY WISHLIST</h2>
+            <div id="container">
+        
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+
+
+
+
+
+    <div id="main">
+        <h2>MY WISHLIST</h2>
+    <div id="container">
+
+    </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/wishlist.js">
+
+</script>
+
+
+
+<script type="module">
+    import {topNav,leftNav,navButtons,footer} from "./components/navBar.js";
+    document.querySelector(".topnav").innerHTML=topNav();
+    document.querySelector(".leftnav").innerHTML=leftNav();
+    document.querySelector(".footer").innerHTML=footer();
+    navButtons();
+</script>
