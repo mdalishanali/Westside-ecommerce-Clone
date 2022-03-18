@@ -1,31 +1,42 @@
-Our Construct Week Project (Croma.com)
-Firstly as a team, we would like to express how grateful we are to Masai School for giving us this wonderful opportunity to learn under their guidance and for sharing our first project experience which we had done remotely. We are great thankful to Chandra Sir.
+Westside-Ecommerce-Clone
+We are sharing all our experience about our project with the help of that blog this group is assigned by Masai school to develop a clone of Westside web site
+Members of group:
+1.Manesh Suresh
+2.Muralikrishna V A
+3.Anubhav Varshney
+4.Rohit Bhaud
+5.Md Alishan Ali
+6.Sayli Giri
+We clone the website using below stacks. The clone is not defined the complete website but some functionalities of website like, Landing page, and all bug fixed by . Muralikrishna V A , Manesh Suresh create account & sign in section code merge made by Anubhav Varshney, men, women product section by Rohit Bhaud and Sayli Giri, admin section to add product in website payment made by Rohit Bhaud, cart checkout section made by Md Alishan Ali ,help section And Footer Part is made by Muralikrishna V A.
+Before sharing our experience about that project we want to show some snippets of our web-site.
+<img src="https://miro.medium.com/max/1400/1*4mMg1I6LrMX5q3TeHTz3wQ.png"/>
+<img src="https://miro.medium.com/max/1400/1*qbNf_ZZeIlS_pOIcuwDcVQ.png"/>
 
 
-Our Construct Week Project (Croma.com)
-Firstly as a team, we would like to express how grateful we are to Masai School for giving us this wonderful opportunity to learn under their guidance and for sharing our first project experience which we had done remotely. We are great thankful to Chandra Sir.
-<img src="https://miro.medium.com/max/875/1*eDMWnceWOPcc_aHArGwJOg.png"/>
 
-croma.com
-Team Members
-Madhan Mohan
-Manesh Suresh
-Vaibhav Upsani
-Faruk Khan
-Kushagra
-Md Alishan Ali
-Introduction
-Our task was to implement our HTML, CSS, and JavaScript knowledge which we had learned at Masai. We used this skillset to build a static copy of croma.com along with the responsiveness of the page for different screen sizes.
-How we started the project
-<img src="https://miro.medium.com/max/875/1*XI3CIMKg7XZUdz_SwTqO7g.png"/>
 
-We started this project with just a few simple questions like what we can do in this project and in this short span of time how much we can deliver, what major points we should consider, and how to implement communication while working remotely. We were able to identify all the problems one shall face while building the project and had necessary guidelines in place which would help us move forward step by step rather than jumping and opening many things at a time.
-The platform used for communication
-For delivering a result-oriented output of any work/project communication between the team is the most crucial part. We used slack , zoom, google meet and whatsapp to communicate with each other. The effective and goal-oriented approach towards communication made this task a lot easier for us.
-Challenges
-Git-pull and push of the code.
-Merging each other code for the first time.
-Adding javascript for functionalities.
-Takeaways
-To be able to work on a project the team members must possess leadership qualities, he should be able to contribute ideas and be respectful to others.
-Overall, it was a surreal experience, and we look forward to many such challenges.Thank you Chandra Sir fo such a great project..
+
+For Visit Our Site:-
+Deploy link:- https://westside-ecommerce-clone.vercel.app/
+GitHub link:- https://github.com/mdalishanali/Westside-ecommerce-Clone
+<img src="https://miro.medium.com/max/1400/1*nviW42wceA3dwDwA_cVdBA.png"/>
+<img src="https://miro.medium.com/max/1400/1*4QAlvpE-LSGub7FQOdTpOA.png"/>
+Used Application:-
+HTML
+CSS
+JAVASCRIPT
+ES6
+GITHUB
+Challenges :-
+Merging all code file’s into the main code.
+Applying javascript functionality.
+Step to over come the challenges:-
+We got help from you-tube video to overcome combining part of all file’s to main code.
+
+
+
+
+
+
+
+
