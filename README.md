@@ -1,12 +1,13 @@
 Westside-Ecommerce-Clone
 We are sharing all our experience about our project with the help of that blog this group is assigned by Masai school to develop a clone of Westside web site
-Members of group:
-1.Manesh Suresh
-2.Muralikrishna V A
-3.Anubhav Varshney
-4.Rohit Bhaud
-5.Md Alishan Ali
-6.Sayli Giri
+Members of group:<br>
+1.Manesh Suresh<br>
+2.Muralikrishna V A<br>
+3.Anubhav Varshney<br>
+4.Rohit Bhaud<br>
+5.Md Alishan Ali<br>
+6.Sayli Giri<br>
+
 We clone the website using below stacks. The clone is not defined the complete website but some functionalities of website like, Landing page, and all bug fixed by . Muralikrishna V A , Manesh Suresh create account & sign in section code merge made by Anubhav Varshney, men, women product section by Rohit Bhaud and Sayli Giri, admin section to add product in website payment made by Rohit Bhaud, cart checkout section made by Md Alishan Ali ,help section And Footer Part is made by Muralikrishna V A.
 Before sharing our experience about that project we want to show some snippets of our web-site.
 <img src="https://miro.medium.com/max/1400/1*4mMg1I6LrMX5q3TeHTz3wQ.png"/>
